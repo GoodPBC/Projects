@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+	<!-- FA -->
+	<script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"></script>
+	<!-- reset.css -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<!-- style.css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	        
+</head>
+<body>
+	<div class="header">
+		<h1 class="text-center">MY TO DO LIST</h1> <!-- page title -->
+	</div>
+	<div class="row">
+	  <div class="col-md-4 col-centered">
+	  	<div id="form-div">
+	  		<form>
+			    <div class="input-group">
+			      <input type="text" class="form-control" placeholder="Things to do" type="text" id="todo">
+			      <span class="input-group-btn">
+			        <input class="btn btn-default btn-success" type="submit" value="Add to list" id="addTodo">
+			      </span>
+			    </div><!-- /input-group -->
+			  </form>
+		  </div>
+	  </div><!-- /.col-lg-6 -->
+	</div>
+
+	<hr>
+	<div class="row">
+		<div class="col-md-4 col-centered">
+			<div class="container">
+				<div id="todos">	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- logic.js link -->
+	<script src="assets/javascript/logic.js"></script>
+</body>
+</html>
