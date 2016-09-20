@@ -1,10 +1,11 @@
  var todoCount = 0;  	//holds the count for our todo list  items
 
  $('#addTodo').on("click", function() {
-		var todoTask = $('#todo').val().trim();		//grabs value from text input
+		var todoTask = $('#todo').val().trim().toUpperCase();		//grabs value from text input
 		var todoItem = $('<p>'); 	//jquery create <p> element
+		todoItem.css('font-weight', '700');
 		todoItem.attr("id", "item-" + todoCount); 	//add ID of "item-" and concat todoCount to it.
-		todoItem.append(" " + todoTask); 	//appends todoTask to todoItem 
+		todoItem.append(" " + "--" + " " + todoTask); 	//appends todoTask to todoItem 
 
 
 		var closeTodo = $('<button class="btn-danger">'); 	//create button for todo's
